@@ -68,6 +68,7 @@ sudo pacman -S --noconfirm --needed gnome-disk-utility
 sudo pacman -S --noconfirm --needed gnome-keyring
 
 sudo pacman -S --noconfirm --needed curl
+sudo pacman -S --noconfirm --needed plank
 sudo pacman -S --noconfirm --needed nano
 sudo pacman -S --noconfirm --needed dmidecode
 sudo pacman -S --noconfirm --needed glances
