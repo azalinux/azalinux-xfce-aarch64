@@ -1,0 +1,37 @@
+1) install archlinuxarm to a micro SD using instructions at link below:
+https://archlinuxarm.org/platforms/armv8/broadcom/raspberry-pi-4
+
+2) boot from micro SD and install archlinuxarm to usb ssd
+
+    ssh alarm@alarmpi
+    su root
+    pacman-key --init
+    pacman-key --populate archlinuxarm
+    pacman -Syu
+    pacman -S dosfstools wget arch-install-scripts
+    fdisk /dev/sda
+    mkdir /mnt/boot
+    mkdir /mnt/root
+    mkfs.vfat /dev/sda1
+    mkfs.ext4 /dev/sda2
+    mount /dev/sda1 /mnt/boot
+    mount /dev/sda2 /mnt/root
+    cd /mnt
+    wget http://os.archlinuxarm.org/os/ArchLinuxARM-rpi-aarch64-latest.tar.gz
+    bsdtar -xpf ArchLinuxARM-rpi-aarch64-latest.tar.gz -C root
+    sync
+    mv root/boot/* boot
+    sync
+    sed -i 's/mmcblk0p/sda/g' root/etc/fstab
+    
+3) update and configure archlinuxarm on usb ssd
+
+    umount /mnt/boot
+    mount /dev/sda1 /mnt/root/boot
+    arch-chroot /mnt/root
+    pacman -Syu
+    vi /etc/mkinitcpio.conf
+    # modify mkinitcpio.conf so MODULES=(pcie_brcmstb)
+    mkinitcpio -P
+    exit
+    poweroff
