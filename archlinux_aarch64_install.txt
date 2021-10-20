@@ -33,7 +33,9 @@ https://archlinuxarm.org/platforms/armv8/broadcom/raspberry-pi-4
     vi /etc/mkinitcpio.conf
     # modify mkinitcpio.conf so MODULES=(pcie_brcmstb)
     mkinitcpio -P
-    
+   
+   ############ Setup.sh #################
+   
     ln -sf /usr/share/zoneinfo/Australia/Brisbane /etc/localtime
     hwclock --systohc
 
@@ -67,3 +69,5 @@ https://archlinuxarm.org/platforms/armv8/broadcom/raspberry-pi-4
     
     exit
     poweroff
+    
+########### Setup.sh ############################
