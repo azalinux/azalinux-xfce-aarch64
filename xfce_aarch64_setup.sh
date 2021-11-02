@@ -10,7 +10,6 @@ sudo pacman -S --noconfirm --needed arch-install-scripts
 sudo pacman -S --noconfirm --needed os-prober
 sudo pacman -S --noconfirm --needed openssh
 sudo systemctl enable sshd
-#sudo pacman -S --noconfirm --needed dhcpcd
 
 
 sudo pacman -S xfce4 xfce4-goodies --noconfirm --needed
@@ -112,11 +111,8 @@ sh samba_install.sh
 
 sh trizen.sh
 
-#sh lightdm.sh
 sh sddm.sh
 
-echo "### Installing Vivaldi Snapshot ###"
-#sh install-vivaldi.sh
 
 trizen -S --noconfirm --needed --noedit pamac-aur-git
 #trizen -S --noconfirm --needed --noedit google-chrome-dev
@@ -137,4 +133,3 @@ trizen -S --noconfirm --needed --noedit thunar-shares-plugin
 
 sudo systemctl enable vncserver-x11-serviced
 
-sudo systemctl enable NetworkManager
