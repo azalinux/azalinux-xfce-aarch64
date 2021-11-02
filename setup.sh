@@ -34,5 +34,8 @@ set -u
     sleep 3
     visudo
     
+    pacman -S --noconfirm --needed networkmanager
+    systemctl enable NetworkManager
+    
     exit
     poweroff
