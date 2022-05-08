@@ -117,14 +117,14 @@ sh sddm.sh
 
 trizen -S --noconfirm --needed --noedit pamac-aur-git
 #trizen -S --noconfirm --needed --noedit google-chrome-dev
-trizen -S --noconfirm --needed --noedit ocs-url
+#trizen -S --noconfirm --needed --noedit ocs-url
 trizen -S --noconfirm --needed --noedit thunar-shares-plugin
 #trizen -S --noconfirm --needed --noedit sweet-folders-icons-git
 #trizen -S --noconfirm --needed --noedit starlabstheme-gtk-git
 #trizen -S --noconfirm --needed --noedit vivaldi
 #trizen -S --noconfirm --needed --noedit vivaldi-codecs-ffmpeg-extra-bin
-#trizen -S --noconfirm --needed --noedit realvnc-vnc-server
-#trizen -S --noconfirm --needed --noedit realvnc-vnc-viewer
+trizen -S --noconfirm --needed --noedit realvnc-vnc-server
+trizen -S --noconfirm --needed --noedit realvnc-vnc-viewer
 #trizen -S --noconfirm --needed --noedit vlc-nightly
 #trizen -S --noconfirm --needed --noedit inxi-git
 
