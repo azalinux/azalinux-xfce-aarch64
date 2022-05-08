@@ -108,7 +108,7 @@ sudo pacman -S --noconfirm --needed nfs-utils
 
 #sh wallpaper.sh
 
-sh samba_install.sh
+#sh samba_install.sh
 
 sh trizen.sh
 
