@@ -106,6 +106,12 @@ sudo pacman -S --noconfirm --needed network-manager-applet
 sudo pacman -S --noconfirm --needed p7zip
 sudo pacman -S --noconfirm --needed nfs-utils
 
+sudo pacman -S --noconfirm --needed samba
+sudo wget "https://raw.githubusercontent.com/azalinux/azalinux-archinstall-gnome/main/smb.conf" -O /etc/samba/smb.conf
+sudo smbpasswd -a aza
+sudo systemctl enable smb nmb
+
+
 #sh wallpaper.sh
 
 #sh samba_install.sh
