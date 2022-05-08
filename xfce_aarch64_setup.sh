@@ -8,6 +8,7 @@ sudo pacman -Syuu --noconfirm --needed
 sudo pacman -S --noconfirm --needed base-devel 
 sudo pacman -S --noconfirm --needed arch-install-scripts
 sudo pacman -S --noconfirm --needed os-prober
+sudo pacman -S --noconfirm --needed bash-completion
 sudo pacman -S --noconfirm --needed openssh
 sudo systemctl enable sshd
 
