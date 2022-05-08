@@ -38,4 +38,4 @@ set -u
     systemctl enable NetworkManager
     
     exit
-    poweroff
+
