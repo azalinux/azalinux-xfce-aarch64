@@ -37,5 +37,6 @@ set -u
     pacman -S --noconfirm --needed networkmanager
     systemctl enable NetworkManager
     
+    echo "You need to Reboot NOW! "
     exit
 
