@@ -4,7 +4,7 @@ set -e
 set -u
 
     ln -sf /usr/share/zoneinfo/Australia/Brisbane /etc/localtime
-    hwclock --systohc
+    #hwclock --systohc
 
     sed -i 's/#en_US.UTF-8 UTF-8/en_US.UTF-8 UTF-8/' /etc/locale.gen
 
