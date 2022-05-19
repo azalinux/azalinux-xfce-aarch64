@@ -37,6 +37,7 @@ set -u
     pacman -S --noconfirm --needed networkmanager
     systemctl enable NetworkManager
     
+    echo "enter new ROOT password: "
     passwd root
     
     echo "You need to Reboot NOW! "
