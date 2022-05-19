@@ -14,6 +14,7 @@ sudo systemctl enable sshd
 
 
 sudo pacman -S xfce4 xfce4-goodies --noconfirm --needed
+#sudo pacman -S mate mate-extra mate-tweak --noconfirm --needed
 sudo pacman -S --noconfirm --needed xfce4-notifyd
 sudo pacman -S --noconfirm --needed xorg
 sudo pacman -S --noconfirm --needed sddm
