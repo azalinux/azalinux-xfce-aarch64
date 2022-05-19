@@ -25,11 +25,11 @@ set -u
     passwd aza
     usermod -aG wheel,audio,video,optical,storage,sys aza
     pacman -S --noconfirm --needed xdg-user-dirs
-    
+    pacman -S --noconfirm --needed sudo
     pacman -S --noconfirm --needed vi
     pacman -S --noconfirm --needed vim
 
-# visudo [uncomment "Wheel root access"] (to save type: :wq )
+# visudo [uncomment "Wheel root access] (to save type: :wq )
     echo " visudo is about to run - uncomment the 'wheel root access' then type ':wq' to save and exit :)"
     sleep 3
     visudo
