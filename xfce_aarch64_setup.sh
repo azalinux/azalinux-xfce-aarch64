@@ -131,8 +131,8 @@ trizen -S --noconfirm --needed --noedit pamac-aur-git
 #trizen -S --noconfirm --needed --noedit starlabstheme-gtk-git
 #trizen -S --noconfirm --needed --noedit vivaldi
 #trizen -S --noconfirm --needed --noedit vivaldi-codecs-ffmpeg-extra-bin
-trizen -S --noconfirm --needed --noedit realvnc-vnc-server
-trizen -S --noconfirm --needed --noedit realvnc-vnc-viewer
+#trizen -S --noconfirm --needed --noedit realvnc-vnc-server
+#trizen -S --noconfirm --needed --noedit realvnc-vnc-viewer
 #trizen -S --noconfirm --needed --noedit vlc-nightly
 #trizen -S --noconfirm --needed --noedit inxi-git
 
@@ -140,5 +140,5 @@ trizen -S --noconfirm --needed --noedit realvnc-vnc-viewer
 
 #sudo /usr/bin/vnclicense -add P98BK-34AF4-V2K63-TMBH8-BYNRA
 
-sudo systemctl enable vncserver-x11-serviced
+#sudo systemctl enable vncserver-x11-serviced
 
