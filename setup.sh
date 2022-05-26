@@ -21,6 +21,8 @@ set -u
     echo -n "::1       localhost" >> /etc/hosts
     echo -n "127.0.1.1 myhostname.localdomain myhostname" >> /etc/hosts
     
+    echo "setting up new user 'aza' login password:"
+    
     useradd -m aza
     passwd aza
     usermod -aG wheel,audio,video,optical,storage,sys aza
