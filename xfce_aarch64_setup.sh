@@ -4,6 +4,8 @@ set -u
 sh cores.sh
 #xdg-user-dirs-update
 
+sudo userdel -r alarm
+
 sudo pacman -Syuu --noconfirm --needed
 sudo pacman -S --noconfirm --needed base-devel 
 sudo pacman -S --noconfirm --needed arch-install-scripts
