@@ -42,8 +42,7 @@ set -u
     echo "enter new ROOT password: "
     passwd root
     
-    userdel -r alarm
-    
+       
     echo "You need to Reboot NOW! "
     exit
 
