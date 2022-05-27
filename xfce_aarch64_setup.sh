@@ -22,6 +22,7 @@ sudo pacman -S --noconfirm --needed xorg
 sudo pacman -S --noconfirm --needed sddm
 sudo pacman -S --noconfirm --needed mesa 
 sudo pacman -S --noconfirm --needed firewalld
+sudo pacman -S --noconfirm --needed gvs-smb
 
 sudo pacman -S adobe-source-sans-pro-fonts --noconfirm --needed
 sudo pacman -S cantarell-fonts --noconfirm --needed
