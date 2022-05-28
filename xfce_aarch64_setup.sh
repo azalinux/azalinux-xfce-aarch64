@@ -127,6 +127,7 @@ sh sddm.sh
 
 
 trizen -S --noconfirm --needed --noedit pamac-aur-git
+#trizen -S --noconfirm --needed --noedit caja-admin
 #trizen -S --noconfirm --needed --noedit google-chrome-dev
 #trizen -S --noconfirm --needed --noedit ocs-url
 #trizen -S --noconfirm --needed --noedit thunar-shares-plugin
