@@ -21,7 +21,7 @@ sudo pacman -S --noconfirm --needed xfce4-notifyd
 sudo pacman -S --noconfirm --needed xorg
 sudo pacman -S --noconfirm --needed sddm
 sudo pacman -S --noconfirm --needed mesa 
-sudo pacman -S --noconfirm --needed firewalld
+#sudo pacman -S --noconfirm --needed firewalld
 sudo pacman -S --noconfirm --needed gvfs-smb
 
 sudo pacman -S adobe-source-sans-pro-fonts --noconfirm --needed
@@ -91,7 +91,6 @@ sudo pacman -S --noconfirm --needed gtop
 sudo pacman -S --noconfirm --needed gparted
 sudo pacman -S --noconfirm --needed simplescreenrecorder
 sudo pacman -S --noconfirm --needed filezilla
-#sudo pacman -S --noconfirm --needed atom
 sudo pacman -S --noconfirm --needed ipset
 sudo pacman -S --noconfirm --needed geany
 sudo pacman -S --noconfirm --needed meld
